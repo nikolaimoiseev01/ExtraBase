@@ -113,7 +113,7 @@
                                 </p>
                             </div>
 
-                            <form method="POST" action="{{ route('login') }}" class="space-y-6 md:space-y-4">
+                            <form wire:submit.prevent="login" class="space-y-6 md:space-y-4">
                                 @csrf
 
                                 <div>
@@ -130,10 +130,16 @@
                                         <input
                                             type="text"
                                             name="email"
+                                            wire:model="form.email"
                                             required
                                             class="w-full pl-12 pr-4 py-3 bg-[var(--light-gray)] rounded-lg border-2 border-transparent focus:border-[#3956BC] focus:outline-none"
                                             placeholder="partner@example.com"
                                         >
+                                        @error('form.email')
+                                        <div class="mt-2 text-sm text-red-200">
+                                            {{ $message }}
+                                        </div>
+                                        @enderror
                                     </div>
                                 </div>
 
@@ -150,12 +156,18 @@
 
                                         <input
                                             type="password"
+                                            wire:model="form.password"
                                             name="password"
                                             required
                                             class="w-full pl-12 pr-4 py-3 bg-[var(--light-gray)] rounded-lg border-2 border-transparent focus:border-[#3956BC] focus:outline-none"
                                             placeholder="••••••••"
                                         >
                                     </div>
+                                    @error('form.password')
+                                    <div class="mt-2 text-sm text-red-200">
+                                        {{ $message }}
+                                    </div>
+                                    @enderror
                                 </div>
 
                                 <div class="flex items-center justify-between gap-4 sm:flex-col sm:items-start">
@@ -164,9 +176,6 @@
                                         <span class="text-[var(--steel-gray)] text-sm">Запомнить меня</span>
                                     </label>
 
-                                    <a href="#" class="text-[#3956BC] hover:underline text-sm font-medium">
-                                        Забыли пароль?
-                                    </a>
                                 </div>
 
                                 <button
