@@ -27,9 +27,10 @@ class UserForm
                 Select::make('roles')
                     ->label('Роль')
                     ->relationship('roles', 'name')
+                    ->multiple()
                     ->preload()
                     ->searchable()
-                    ->required(),
+                    ->required()
             ]);
     }
 }
