@@ -14,10 +14,14 @@
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="antialiased flex flex-col min-h-screen">
-<x-header/>
-{{ $slot }}
-<x-footer/>
+<body class="antialiased flex min-h-screen flex-col bg-white text-slate-900">
+<x-header />
+
+<div class="flex-1 pt-20 md:pt-16">
+    {{ $slot }}
+</div>
+
+<x-footer />
 @stack('page-js')
 </body>
 </html>

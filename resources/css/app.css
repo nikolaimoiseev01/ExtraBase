@@ -2,15 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --light-gray: #f3f5fb;
+    --steel-gray: #667085;
+}
+
 * {
     margin: 0;
     box-sizing: border-box;
 }
 
 body {
-    @apply bg-main_bg;
+    @apply bg-white text-slate-900;
 }
 
-h2 {
-    @apply font-[Forum] font-normal text-5xl;
+@layer components {
+    .container-page {
+        @apply container mx-auto px-4 lg:px-8 max-w-[1500px];
+    }
 }

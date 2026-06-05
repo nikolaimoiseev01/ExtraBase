@@ -4,8 +4,10 @@ namespace App\Livewire\Pages\Auth;
 
 use App\Livewire\Forms\LoginForm;
 use Illuminate\Support\Facades\Session;
+use Livewire\Attributes\Layout;
 use Livewire\Component;
 
+#[Layout('layouts.auth')]
 class LoginPage extends Component
 {
     public function render()
@@ -26,6 +28,6 @@ class LoginPage extends Component
 
         Session::regenerate();
 
-        $this->redirectIntended(default: route('account.settings', absolute: false), navigate: true);
+        $this->redirectIntended(default: route('account.dashboard', absolute: false), navigate: true);
     }
 }

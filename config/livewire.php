@@ -38,7 +38,7 @@ return [
     |
     */
 
-    'layout' => 'layouts.portal',
+    'component_layout' => 'layouts::portal',
 
     /*
     |---------------------------------------------------------------------------
