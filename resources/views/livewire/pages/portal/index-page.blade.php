@@ -22,7 +22,7 @@
                     </h1>
 
                     <p class="text-2xl xl:text-xl md:text-lg sm:text-base text-white/90 mb-8 leading-relaxed">
-                        ПВХ-мембрана Extra Base 3.2 мм для фундаментов, тоннелей, подземных сооружений и промышленных объектов
+                        ПВХ-мембрана ООО "СВ ТИМ" 1.8 / 2.5 / 3.2 мм для фундаментов, тоннелей, подземных сооружений и промышленных объектов
                     </p>
 
                     <div class="flex flex-row md:flex-col gap-4">
@@ -50,7 +50,7 @@
                     <div class="space-y-4">
                         <div class="flex justify-between items-center gap-4 pb-4 border-b border-white/20">
                             <span class="text-white/70">Толщина</span>
-                            <span class="text-white font-bold">3.2 мм</span>
+                            <span class="text-white font-bold">1.8 / 2.5 / 3.2 мм</span>
                         </div>
                         <div class="flex justify-between items-center gap-4 pb-4 border-b border-white/20">
                             <span class="text-white/70">Прочность</span>
@@ -79,7 +79,7 @@
         <div class="container mx-auto px-8 xl:px-6 lg:px-4">
             <div class="text-center mb-16 lg:mb-10">
                 <h2 class="text-5xl xl:text-4xl md:text-3xl sm:text-2xl font-bold text-[#3956BC] mb-4">
-                    Преимущества Extra Base
+                    Преимущества ООО "СВ ТИМ"
                 </h2>
                 <p class="text-xl md:text-lg sm:text-base text-[var(--steel-gray)] max-w-3xl mx-auto">
                     Современное решение для надежной гидроизоляции подземных конструкций
@@ -124,12 +124,12 @@
                     </h2>
 
                     <p class="text-lg md:text-base text-[var(--steel-gray)] mb-8 leading-relaxed">
-                        ПВХ-мембрана Extra Base — это комплексное решение для гидроизоляции, включающее мембрану, дренажный слой, теплоизоляцию и герметичные сварные швы.
+                        ПВХ-мембрана ООО "СВ ТИМ" — это комплексное решение для гидроизоляции, включающее мембрану, дренажный слой, теплоизоляцию и герметичные сварные швы.
                     </p>
 
                     <div class="space-y-4">
                         @foreach([
-                            ['ПВХ-мембрана 3.2 мм', 'Основной гидроизоляционный слой'],
+                            ['ПВХ-мембрана 1.8 / 2.5 / 3.2 мм', 'Основной гидроизоляционный слой'],
                             ['Дренажный слой', 'Отвод грунтовых вод'],
                             ['Сварные швы', 'Абсолютная герметичность соединений'],
                         ] as [$title, $description])
@@ -463,7 +463,7 @@
             </h2>
 
             <p class="text-xl md:text-lg sm:text-base text-white/90 mb-8 max-w-2xl mx-auto">
-                Присоединяйтесь к сети дилеров Extra Base и получите доступ к эксклюзивным условиям сотрудничества
+                Присоединяйтесь к сети дилеров ООО "СВ ТИМ" и получите доступ к эксклюзивным условиям сотрудничества
             </p>
 
             <div class="flex flex-row md:flex-col justify-center gap-4">

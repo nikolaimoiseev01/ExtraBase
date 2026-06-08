@@ -3,7 +3,7 @@
     <section class="py-20 lg:py-16 md:py-12 sm:py-10 bg-gradient-to-br from-[#2E4A92] to-[#4B6CD6] text-white">
         <div class="container mx-auto px-8 lg:px-4 container-page">
             <h1 class="text-6xl lg:text-5xl md:text-4xl sm:text-3xl font-bold mb-6 md:mb-4">
-                О компании Extra Base
+                О компании ООО "СВ ТИМ"
             </h1>
 
             <p class="text-2xl lg:text-xl md:text-lg sm:text-base text-white/90 max-w-3xl">

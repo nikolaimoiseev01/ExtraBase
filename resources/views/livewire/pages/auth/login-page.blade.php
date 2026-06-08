@@ -14,7 +14,7 @@
         <div class="bg-white/10 backdrop-blur-md rounded-2xl p-8 md:p-6 sm:p-5 border border-white/20">
             <div class="text-center mb-8 md:mb-6">
                 <a href="/" wire:navigate class="text-4xl md:text-3xl sm:text-2xl font-bold text-white mb-2">
-                    Extra Base
+                    ООО "СВ ТИМ"
                 </a>
 
                 <p class="text-white/80">

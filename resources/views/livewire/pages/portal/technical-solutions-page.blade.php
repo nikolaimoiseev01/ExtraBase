@@ -69,7 +69,7 @@
             </h1>
 
             <p class="text-2xl lg:text-xl md:text-lg sm:text-base text-white/90 max-w-3xl">
-                Типовые узлы и детали монтажа гидроизоляции Extra Base
+                Типовые узлы и детали монтажа гидроизоляции ООО "СВ ТИМ"
             </p>
         </div>
     </section>

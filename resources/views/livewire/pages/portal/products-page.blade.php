@@ -154,7 +154,7 @@
 
                 <div>
                     <h2 class="text-4xl md:text-3xl sm:text-2xl font-bold text-[#3956BC] mb-6 md:mb-4">
-                        ПВХ-мембрана Extra Base 3.2 мм
+                        ПВХ-мембрана ООО "СВ ТИМ" 1.8 / 2.5 / 3.2 мм
                     </h2>
 
                     <p class="text-lg md:text-base text-[var(--steel-gray)] mb-8 md:mb-6 leading-relaxed">
@@ -164,7 +164,7 @@
 
                     <div class="space-y-3 mb-8 md:mb-6">
                         @foreach([
-                            'Толщина 3.2 мм - оптимальная прочность',
+                            'Толщина 1.8 / 2.5 / 3.2 мм - оптимальная прочность',
                             'Гарантия 25 лет от производителя',
                             'Монтаж при температуре до -20°C',
                         ] as $item)

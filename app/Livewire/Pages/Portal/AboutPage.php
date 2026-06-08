@@ -30,7 +30,7 @@ class AboutPage extends Component
     ];
 
     public array $timeline = [
-        ['year' => '2010', 'event' => 'Основание компании Extra Base'],
+        ['year' => '2010', 'event' => 'Основание компании ООО "СВ ТИМ"'],
         ['year' => '2013', 'event' => 'Запуск производства ПВХ-мембран'],
         ['year' => '2016', 'event' => 'Получение ISO 9001:2015'],
         ['year' => '2019', 'event' => 'Расширение дилерской сети'],

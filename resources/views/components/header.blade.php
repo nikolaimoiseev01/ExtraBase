@@ -5,7 +5,7 @@
             <a href="{{ route('portal.index') }}" wire:navigate class="flex items-center gap-3">
                  <x-logo />
                 <div class="text-xl md:text-lg font-bold text-[#3956BC]">
-                    Extra Base
+                    ООО<br>СВ ТИМ
                 </div>
             </a>
 

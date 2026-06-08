@@ -1,4 +1,4 @@
-    <svg  {{ $attributes->merge(['class' => '']) }} id="_Слой_2" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 357.26 321.39">
+    <svg  {{ $attributes->merge(['class' => 'w-16']) }} id="_Слой_2" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 357.26 321.39">
         <!-- Generator: Adobe Illustrator 29.8.3, SVG Export Plug-In . SVG Version: 2.1.1 Build 3)  -->
         <defs>
             <style>

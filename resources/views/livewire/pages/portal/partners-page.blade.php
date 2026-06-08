@@ -7,7 +7,7 @@
             </h1>
 
             <p class="text-2xl lg:text-xl md:text-lg sm:text-base text-white/90 max-w-3xl">
-                Удобный инструмент для управления проектами и взаимодействия с Extra Base
+                Удобный инструмент для управления проектами и взаимодействия с ООО "СВ ТИМ"
             </p>
         </div>
     </section>
