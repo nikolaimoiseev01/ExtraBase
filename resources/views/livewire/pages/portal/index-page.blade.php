@@ -425,8 +425,8 @@
                                 </div>
                                 <div>
                                     <div class="font-bold text-[#3956BC]">Email</div>
-                                    <a href="mailto:info@extrabase.ru" class="text-[var(--steel-gray)] hover:text-[#3956BC] transition-colors">
-                                        info@extrabase.ru
+                                    <a href="mailto:info@svtym.ru" class="text-[var(--steel-gray)] hover:text-[#3956BC] transition-colors">
+                                        info@svtym.ru
                                     </a>
                                 </div>
                             </div>
