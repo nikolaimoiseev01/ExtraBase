@@ -26,7 +26,7 @@ class DocumentationPage extends Component
             'icon' => 'shield',
         ],
         [
-            'title' => 'Технический паспорт ООО "СВ ТИМ" 3.2',
+            'title' => 'Технический паспорт  3.2',
             'description' => 'Полное техническое описание ПВХ-мембраны',
             'size' => '3.2 МБ',
             'icon' => 'file',

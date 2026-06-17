@@ -22,26 +22,8 @@
                     </h1>
 
                     <p class="text-2xl xl:text-xl md:text-lg sm:text-base text-white/90 mb-8 leading-relaxed">
-                        ПВХ-мембрана ООО "СВ ТИМ" 1.8 / 2.5 / 3.2 мм для фундаментов, тоннелей, подземных сооружений и промышленных объектов
+                        ПВХ-мембрана  1.8 / 2.5 / 3.2 мм для фундаментов, тоннелей, подземных сооружений и промышленных объектов
                     </p>
-
-                    <div class="flex flex-row md:flex-col gap-4">
-                        <button
-                            @click="contactModalOpen = true"
-                            class="px-8 md:px-6 py-4 bg-white text-[#3956BC] font-bold rounded-lg hover:bg-gray-100 transition-all transform hover:scale-105 shadow-lg"
-                        >
-                            Получить расчет
-                        </button>
-
-                        <button class="px-8 md:px-6 py-4 bg-white/10 backdrop-blur-sm text-white font-bold rounded-lg border-2 border-white/30 hover:bg-white/20 transition-all flex items-center justify-center gap-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-                                <polyline points="7 10 12 15 17 10"/>
-                                <line x1="12" x2="12" y1="15" y2="3"/>
-                            </svg>
-                            <span>Скачать документацию</span>
-                        </button>
-                    </div>
                 </div>
 
                 <div class="bg-white/10 backdrop-blur-md rounded-2xl p-8 md:p-6 border border-white/20">
@@ -79,7 +61,7 @@
         <div class="container mx-auto px-8 xl:px-6 lg:px-4">
             <div class="text-center mb-16 lg:mb-10">
                 <h2 class="text-5xl xl:text-4xl md:text-3xl sm:text-2xl font-bold text-[#3956BC] mb-4">
-                    Преимущества ООО "СВ ТИМ"
+                    Преимущества
                 </h2>
                 <p class="text-xl md:text-lg sm:text-base text-[var(--steel-gray)] max-w-3xl mx-auto">
                     Современное решение для надежной гидроизоляции подземных конструкций
@@ -124,7 +106,7 @@
                     </h2>
 
                     <p class="text-lg md:text-base text-[var(--steel-gray)] mb-8 leading-relaxed">
-                        ПВХ-мембрана ООО "СВ ТИМ" — это комплексное решение для гидроизоляции, включающее мембрану, дренажный слой, теплоизоляцию и герметичные сварные швы.
+                        ПВХ-мембрана  — это комплексное решение для гидроизоляции, включающее мембрану, дренажный слой, теплоизоляцию и герметичные сварные швы.
                     </p>
 
                     <div class="space-y-4">
@@ -410,8 +392,8 @@
                                 </div>
                                 <div>
                                     <div class="font-bold text-[#3956BC]">Телефон</div>
-                                    <a href="tel:+74951234567" class="text-[var(--steel-gray)] hover:text-[#3956BC] transition-colors">
-                                        +7 (495) 123-45-67
+                                    <a href="tel:74951988986" class="text-[var(--steel-gray)] hover:text-[#3956BC] transition-colors">
+                                        +7 (495) 198-89-86
                                     </a>
                                 </div>
                             </div>
@@ -463,7 +445,7 @@
             </h2>
 
             <p class="text-xl md:text-lg sm:text-base text-white/90 mb-8 max-w-2xl mx-auto">
-                Присоединяйтесь к сети дилеров ООО "СВ ТИМ" и получите доступ к эксклюзивным условиям сотрудничества
+                Присоединяйтесь к сети дилеров  и получите доступ к эксклюзивным условиям сотрудничества
             </p>
 
             <div class="flex flex-row md:flex-col justify-center gap-4">

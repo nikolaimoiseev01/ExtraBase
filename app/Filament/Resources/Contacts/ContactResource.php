@@ -16,6 +16,10 @@ use Filament\Schemas\Schema;
 use Filament\Support\Icons\Heroicon;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
+use App\Filament\Resources\Contacts\Pages\ViewContact;
+use Filament\Actions\ViewAction;
+use Filament\Infolists\Components\TextEntry;
+use Filament\Schemas\Components\Section;
 
 class ContactResource extends Resource
 {
@@ -73,13 +77,59 @@ class ContactResource extends Resource
                 //
             ])
             ->recordActions([
-                EditAction::make(),
+//                EditAction::make(),
+                ViewAction::make(),
                 DeleteAction::make(),
             ])
             ->toolbarActions([
                 BulkActionGroup::make([
                     DeleteBulkAction::make(),
                 ]),
+            ]);
+    }
+
+    public static function infolist(Schema $schema): Schema
+    {
+        return $schema
+            ->components([
+                Section::make('Заявка')
+                    ->schema([
+                        TextEntry::make('name')
+                            ->label('Имя'),
+
+                        TextEntry::make('company_name')
+                            ->label('Компания'),
+
+                        TextEntry::make('phone')
+                            ->label('Телефон'),
+
+                        TextEntry::make('created_at')
+                            ->label('Создано')
+                            ->dateTime(),
+                    ])
+                    ->columns(2),
+
+                Section::make('Файлы')
+                    ->schema([
+                        TextEntry::make('media_files')
+                            ->label('')
+                            ->state(function (Contact $record): string {
+                                $files = $record->getMedia('files');
+
+                                if ($files->isEmpty()) {
+                                    return 'Файлы не прикреплены';
+                                }
+
+                                return $files
+                                    ->map(fn ($media) => sprintf(
+                                        '<a href="%s" target="_blank" class="text-primary-600 underline">%s</a>',
+                                        $media->getUrl(),
+                                        $media->file_name,
+                                    ))
+                                    ->implode('<br>');
+                            })
+                            ->html(),
+                    ]),
             ]);
     }
 

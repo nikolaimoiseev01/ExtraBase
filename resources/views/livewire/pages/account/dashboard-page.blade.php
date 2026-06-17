@@ -22,7 +22,7 @@
             </button>
         </div>
 
-        <div class="grid grid-cols-3 md:grid-cols-1 gap-6 md:gap-4 mb-8">
+        <div class="grid grid-cols-3 md:!grid-cols-1 gap-6 md:gap-4 mb-8">
             <div class="bg-white rounded-xl p-6 md:p-5">
                 <div class="text-3xl md:text-2xl font-bold text-[#3956BC] mb-2">
                     {{ $this->applications->count() }}
@@ -62,7 +62,7 @@
             x-cloak
             class="bg-white rounded-xl shadow-md p-6 md:p-4 mb-8"
         >
-            <form wire:submit.prevent="addOrder" class="grid grid-cols-3 lg:grid-cols-2 md:grid-cols-1 gap-4">
+            <form wire:submit.prevent="addOrder" class="grid grid-cols-3 lg:grid-cols-2 md:!grid-cols-1 gap-4">
                 <div>
                     <label class="block text-sm font-bold text-[#3956BC] mb-2">
                         Дата

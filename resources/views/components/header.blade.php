@@ -5,7 +5,7 @@
             <a href="{{ route('portal.index') }}" wire:navigate class="flex items-center gap-3">
                  <x-logo />
                 <div class="text-xl md:text-lg font-bold text-[#3956BC]">
-                    ООО<br>СВ ТИМ
+                    СВ ТИМ
                 </div>
             </a>
 
@@ -14,23 +14,26 @@
                 <a wire:navigate href="{{ route('portal.about') }}" class="font-medium text-[#3956BC] transition-colors hover:text-[#5A7DD8]">
                     О нас
                 </a>
-                <a wire:navigate href="{{ route('portal.documentation') }}" class="font-medium text-[#3956BC] transition-colors hover:text-[#5A7DD8]">
-                    Документация
+                <a wire:navigate href="{{ route('portal.services') }}" class="font-medium text-[#3956BC] transition-colors hover:text-[#5A7DD8]">
+                    Услуги
                 </a>
                 <a wire:navigate href="{{ route('portal.products') }}" class="font-medium text-[#3956BC] transition-colors hover:text-[#5A7DD8]">
-                    Наши услуги, продукция
+                    Каталог и цены
+                </a>
+                <a wire:navigate href="{{ route('portal.works') }}" class="font-medium text-[#3956BC] transition-colors hover:text-[#5A7DD8]">
+                    Наши работы
                 </a>
                 <a wire:navigate href="{{ route('portal.technical-solutions') }}" class="font-medium text-[#3956BC] transition-colors hover:text-[#5A7DD8]">
                     Альбом технических решений
                 </a>
-                <a wire:navigate href="{{ route('portal.partners') }}" class="font-medium text-[#3956BC] transition-colors hover:text-[#5A7DD8]">
+                <a wire:navigate @auth href="{{ route('account.dashboard') }}" @else href="{{ route('login') }}" @endauth class="font-medium text-[#3956BC] transition-colors hover:text-[#5A7DD8]">
                     Партнеры
                 </a>
             </nav>
 
             <!-- Right Side Actions -->
             <div class="flex lg:hidden items-center gap-4 xl:gap-3">
-                <a href="tel:+74951234567" class="flex items-center gap-2 text-sm font-medium text-[#3956BC] xl:hidden">
+                <a href="tel:74951988986" class="flex items-center gap-2 text-sm font-medium text-[#3956BC] xl:hidden">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
                     </svg>
@@ -41,19 +44,8 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
                     </svg>
-                    <span>Обратная связь</span>
+                    <span>Оставить заявку</span>
                 </button>
-
-                @auth
-                    <a wire:navigate href="{{ route('account.dashboard') }}" class="px-6 xl:px-4 py-2.5 text-sm font-medium rounded-lg border-2 border-[#3956BC] text-[#3956BC] hover:bg-[#3956BC] hover:text-white transition-colors">
-                        Личный кабинет
-                    </a>
-                @else
-                    <a wire:navigate href="{{ route('login') }}" class="px-6 xl:px-4 py-2.5 text-sm font-medium rounded-lg border-2 border-[#3956BC] text-[#3956BC] hover:bg-[#3956BC] hover:text-white transition-colors">
-                        Войти
-                    </a>
-
-                @endauth
 
             </div>
 
@@ -128,33 +120,33 @@
                 <a wire:navigate href="{{ route('portal.about') }}" @click="mobileMenuOpen = false" class="text-2xl md:text-xl font-medium text-white hover:text-[#5A7DD8] transition-colors">
                     О нас
                 </a>
-                <a wire:navigate href="{{ route('portal.documentation') }}" @click="mobileMenuOpen = false" class="text-2xl md:text-xl font-medium text-white hover:text-[#5A7DD8] transition-colors">
-                    Документация
-                </a>
                 <a wire:navigate href="{{ route('portal.products') }}" @click="mobileMenuOpen = false" class="text-2xl md:text-xl font-medium text-white hover:text-[#5A7DD8] transition-colors">
-                    Наши услуги, продукция
+                    Каталог и цены
+                </a>
+                <a wire:navigate href="{{ route('portal.documentation') }}" @click="mobileMenuOpen = false" class="text-2xl md:text-xl font-medium text-white hover:text-[#5A7DD8] transition-colors">
+                    Наши работы
                 </a>
                 <a wire:navigate href="{{ route('portal.technical-solutions') }}" @click="mobileMenuOpen = false" class="text-2xl md:text-xl font-medium text-white hover:text-[#5A7DD8] transition-colors">
                     Альбом технических решений
                 </a>
-                <a wire:navigate href="{{ route('portal.partners') }}" @click="mobileMenuOpen = false" class="text-2xl md:text-xl font-medium text-white hover:text-[#5A7DD8] transition-colors">
+                <a wire:navigate @auth href="{{ route('account.dashboard') }}" @else href="{{ route('login') }}" @endauth @click="mobileMenuOpen = false" class="text-2xl md:text-xl font-medium text-white hover:text-[#5A7DD8] transition-colors">
                     Партнеры
                 </a>
             </nav>
 
             <div class="flex flex-col gap-4 mt-8">
-                <a href="tel:+74951234567" class="flex items-center gap-2 text-lg md:text-base text-white">
+                <a href="tel:74951988986" class="flex items-center gap-2 text-lg md:text-base text-white">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
                     </svg>
-                    <span>+7 (495) 123-45-67</span>
+                    <span>+7 (495) 198-89-86</span>
                 </a>
 
                 <button @click="contactFormOpen = true; mobileMenuOpen = false" class="w-full px-6 py-3 bg-white text-[#3956BC] font-medium rounded-lg flex items-center justify-center gap-2">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
                     </svg>
-                    <span>Обратная связь</span>
+                    <span>Оставить заявку</span>
                 </button>
 
                 <a wire:navigate href="{{ route('login') }}" @click="mobileMenuOpen = false" class="w-full px-6 py-3 border-2 border-white text-white font-medium rounded-lg text-center">

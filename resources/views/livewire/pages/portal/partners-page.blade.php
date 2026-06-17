@@ -7,7 +7,7 @@
             </h1>
 
             <p class="text-2xl lg:text-xl md:text-lg sm:text-base text-white/90 max-w-3xl">
-                Удобный инструмент для управления проектами и взаимодействия с ООО "СВ ТИМ"
+                Удобный инструмент для управления проектами и взаимодействия с
             </p>
         </div>
     </section>
@@ -211,7 +211,7 @@
                 </h2>
             </div>
 
-            <div class="grid grid-cols-3 lg:grid-cols-2 md:grid-cols-1 gap-8 lg:gap-6 gap-8 md:gap-6 sm:gap-8 max-w-5xl mx-auto">
+            <div class="grid grid-cols-3 lg:grid-cols-2 md:!grid-cols-1 gap-8 lg:gap-6 gap-8 md:gap-6 sm:gap-8 max-w-5xl mx-auto">
                 <div class="text-center">
                     <div class="w-20 h-20 md:w-16 md:h-16 bg-gradient-to-br from-[#6B8FE8] to-[#3956BC] rounded-full flex items-center justify-center mx-auto mb-4">
                         <svg class="w-10 h-10 md:w-8 md:h-8 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">

@@ -28,6 +28,11 @@ return [
 
     'view_path' => resource_path('views/livewire'),
 
+    'make_command' => [
+        'type' => 'class',
+        'emoji' => false,
+    ],
+
     /*
     |---------------------------------------------------------------------------
     | Layout

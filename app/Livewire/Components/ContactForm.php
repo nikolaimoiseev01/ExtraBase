@@ -5,20 +5,23 @@ namespace App\Livewire\Components;
 use App\Models\Contact;
 use Livewire\Attributes\Validate;
 use Livewire\Component;
+use Livewire\WithFileUploads;
 
 class ContactForm extends Component
 {
+
+    use WithFileUploads;
+
     #[Validate('required|string|min:2|max:255')]
     public string $name = '';
 
-    #[Validate('required|email|max:255')]
-    public string $email = '';
+    #[Validate('required|max:255')]
+    public string $companyName = '';
 
     #[Validate('required|string|min:8|max:30')]
     public string $phone = '';
 
-    #[Validate('required|string|min:10|max:2000')]
-    public string $message = '';
+    public array $files = [];
 
     public bool $sent = false;
 
@@ -26,14 +29,20 @@ class ContactForm extends Component
     {
         $this->validate();
 
-        Contact::create([
-            'email' => $this->email,
+        $contact = Contact::create([
+            'company_name' => $this->companyName,
             'phone' => $this->phone,
-            'message' => $this->message,
             'name' => $this->name
         ]);
 
-        $this->reset(['name', 'email', 'phone', 'message']);
+        foreach ($this->files as $file) {
+            $contact
+                ->addMedia($file->getRealPath())
+                ->usingFileName($file->getClientOriginalName())
+                ->toMediaCollection('files');
+        }
+
+        $this->reset(['name', 'companyName', 'phone']);
         $this->sent = true;
 
     }

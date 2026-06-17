@@ -9,21 +9,21 @@
 
     <form wire:submit="submit" class="space-y-4">
         <div>
+            <label class="block text-sm font-bold text-[#3956BC] mb-2">Название компании</label>
+            <div class="relative">
+                <svg class="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-[var(--steel-gray)]" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                <input type="text" wire:model="companyName" class="w-full pl-10 pr-4 py-3 bg-white rounded-lg border-2 border-transparent focus:border-[#3956BC] focus:outline-none transition-colors" placeholder="example@email.com">
+            </div>
+            @error('companyName') <p class="mt-1 text-xs text-red-600">{{ $message }}</p> @enderror
+        </div>
+
+        <div>
             <label class="block text-sm font-bold text-[#3956BC] mb-2">Ваше имя *</label>
             <div class="relative">
                 <svg class="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-[var(--steel-gray)]" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
                 <input type="text" wire:model="name" class="w-full pl-10 pr-4 py-3 bg-white rounded-lg border-2 border-transparent focus:border-[#3956BC] focus:outline-none transition-colors" placeholder="Иван Иванов">
             </div>
             @error('name') <p class="mt-1 text-xs text-red-600">{{ $message }}</p> @enderror
-        </div>
-
-        <div>
-            <label class="block text-sm font-bold text-[#3956BC] mb-2">Email *</label>
-            <div class="relative">
-                <svg class="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-[var(--steel-gray)]" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-                <input type="email" wire:model="email" class="w-full pl-10 pr-4 py-3 bg-white rounded-lg border-2 border-transparent focus:border-[#3956BC] focus:outline-none transition-colors" placeholder="example@email.com">
-            </div>
-            @error('email') <p class="mt-1 text-xs text-red-600">{{ $message }}</p> @enderror
         </div>
 
         <div>
@@ -36,12 +36,33 @@
         </div>
 
         <div>
-            <label class="block text-sm font-bold text-[#3956BC] mb-2">Сообщение *</label>
-            <div class="relative">
-                <svg class="absolute left-3 top-3 w-5 h-5 text-[var(--steel-gray)]" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-                <textarea rows="4" wire:model="message" class="w-full pl-10 pr-4 py-3 bg-white rounded-lg border-2 border-transparent focus:border-[#3956BC] focus:outline-none resize-none transition-colors" placeholder="Опишите ваш вопрос или проект..."></textarea>
+            <label class="block text-sm font-bold text-[#3956BC] mb-2">
+                Прикрепить файлы
+            </label>
+
+            <input
+                type="file"
+                wire:model="files"
+                multiple
+                class="w-full px-4 py-3 bg-white rounded-lg border-2 border-transparent focus:border-[#3956BC] focus:outline-none transition-colors"
+            >
+
+            <div wire:loading wire:target="files" class="mt-1 text-xs text-[#3956BC]">
+                Загружаем файлы...
             </div>
-            @error('message') <p class="mt-1 text-xs text-red-600">{{ $message }}</p> @enderror
+
+            @error('files') <p class="mt-1 text-xs text-red-600">{{ $message }}</p> @enderror
+            @error('files.*') <p class="mt-1 text-xs text-red-600">{{ $message }}</p> @enderror
+
+            @if($files)
+                <div class="mt-2 space-y-1">
+                    @foreach($files as $file)
+                        <div class="text-sm text-[var(--steel-gray)]">
+                            {{ $file->getClientOriginalName() }}
+                        </div>
+                    @endforeach
+                </div>
+            @endif
         </div>
 
         <button type="submit" class="w-full px-6 py-4 bg-gradient-to-r from-[#3956BC] to-[#4B6CD6] text-white font-bold rounded-lg hover:from-[#2E4A92] hover:to-[#3956BC] transition-all shadow-lg flex items-center justify-center space-x-2">

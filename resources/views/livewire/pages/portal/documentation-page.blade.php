@@ -7,7 +7,7 @@
             </h1>
 
             <p class="text-2xl lg:text-xl md:text-lg sm:text-base text-white/90 max-w-3xl">
-                Сертификаты, стандарты и техническая документация ООО "СВ ТИМ"
+                Сертификаты, стандарты и техническая документация
             </p>
         </div>
     </section>
@@ -17,19 +17,19 @@
         <div class="container mx-auto px-8 lg:px-4">
             <div class="max-w-4xl mx-auto">
                 <h2 class="text-4xl md:text-3xl sm:text-2xl font-bold text-[#3956BC] mb-8 md:mb-6">
-                    О продукции ООО "СВ ТИМ"
+                    О продукции
                 </h2>
 
                 <div class="text-lg md:text-base text-[var(--steel-gray)]">
                     <p class="mb-6 leading-relaxed">
-                        ПВХ-мембрана ООО "СВ ТИМ" 1.8 / 2.5 / 3.2 мм — это современное решение для надежной гидроизоляции подземных
+                        ПВХ-мембрана  1.8 / 2.5 / 3.2 мм — это современное решение для надежной гидроизоляции подземных
                         конструкций. Продукция производится в соответствии с международными стандартами качества и имеет все
                         необходимые сертификаты.
                     </p>
 
                     <p class="mb-6 leading-relaxed">
                         Наша компания гарантирует высокое качество продукции благодаря строгому контролю на всех этапах
-                        производства. Мембрана ООО "СВ ТИМ" прошла все необходимые испытания и получила подтверждение
+                        производства. Мембрана  прошла все необходимые испытания и получила подтверждение
                         соответствия требованиям технических регламентов Таможенного союза.
                     </p>
 
@@ -51,7 +51,7 @@
                 </h2>
 
                 <div class="bg-white rounded-2xl p-8 md:p-6 sm:p-5 mb-8">
-                    <div class="grid grid-cols-2 md:grid-cols-1 gap-6 md:gap-4">
+                    <div class="grid grid-cols-2 md:!grid-cols-1 gap-6 md:gap-4">
                         @foreach([
                             ['Толщина мембраны', '1.8 / 2.5 / 3.2 мм'],
                             ['Прочность на разрыв', '28 МПа'],
@@ -90,7 +90,7 @@
                     Вся необходимая техническая документация, сертификаты и инструкции доступны для скачивания в формате PDF.
                 </p>
 
-                <div class="grid grid-cols-2 md:grid-cols-1 gap-6">
+                <div class="grid grid-cols-2 md:!grid-cols-1 gap-6">
                     @foreach($documents as $doc)
                         <div class="bg-[var(--light-gray)] rounded-xl p-6 md:p-5 hover:shadow-lg transition-all">
                             <div class="flex items-start gap-4 sm:flex-col">

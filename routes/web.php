@@ -14,7 +14,9 @@ use App\Livewire\Pages\Portal\DocumentationPage;
 use App\Livewire\Pages\Portal\IndexPage;
 use App\Livewire\Pages\Portal\PartnersPage;
 use App\Livewire\Pages\Portal\ProductsPage;
+use App\Livewire\Pages\Portal\ServicesPage;
 use App\Livewire\Pages\Portal\TechnicalSolutionsPage;
+use App\Livewire\Pages\Portal\WorksPage;
 use Illuminate\Support\Facades\Route;
 
 
@@ -64,6 +66,8 @@ Route::get('/', IndexPage::class)->name('portal.index');
 Route::get('/about', AboutPage::class)->name('portal.about');
 Route::get('/documentation', DocumentationPage::class)->name('portal.documentation');
 Route::get('/products', ProductsPage::class)->name('portal.products');
+Route::get('/works', WorksPage::class)->name('portal.works');
+Route::get('/services', ServicesPage::class)->name('portal.services');
 Route::get('/partners', PartnersPage::class)->name('portal.partners');
 Route::get('/technical-solutions', TechnicalSolutionsPage::class)->name('portal.technical-solutions');
 

@@ -16,6 +16,7 @@
         "livewire/volt": "^1.7.0",
         "mallardduck/blade-lucide-icons": "^1.26",
         "opcodesio/log-viewer": "^3.24",
+        "spatie/laravel-medialibrary": "^11.23",
         "spatie/laravel-permission": "^8.0"
     },
     "require-dev": {

@@ -1,11 +1,11 @@
 <footer class="bg-gradient-to-br from-[#2E4A92] to-[#3956BC] text-white">
     <div class="container mx-auto px-8 lg:px-4 py-16 md:py-12 sm:py-10">
-        <div class="grid grid-cols-4 lg:grid-cols-2 md:grid-cols-1 gap-12 lg:gap-8 md:gap-6">
+        <div class="grid grid-cols-4 lg:grid-cols-2 md:!grid-cols-1 gap-12 lg:gap-8 md:gap-6">
             <!-- Company Info -->
             <div>
                 <div class="flex items-center gap-3 mb-4">
                     <x-logo class="h-8 md:h-7 w-auto brightness-0 invert" />
-                    <span class="text-2xl md:text-xl font-bold">ООО "СВ ТИМ"</span>
+                    <span class="text-2xl md:text-xl font-bold"></span>
                 </div>
 
                 <p class="text-white/70 mb-6 text-sm leading-relaxed">
@@ -35,7 +35,7 @@
                 <ul class="space-y-3 md:space-y-2">
                     <li>
                         <a wire:navigate href="{{ route('portal.products') }}" class="text-white/70 hover:text-white transition-colors text-sm">
-                            ПВХ-мембрана ООО "СВ ТИМ"
+                            ПВХ-мембрана
                         </a>
                     </li>
 
@@ -100,7 +100,7 @@
                     <li class="flex items-center gap-3">
                         <svg class="shrink-0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6B8FE8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
 
-                        <a href="tel:+74951234567" class="text-white/70 hover:text-white transition-colors text-sm">
+                        <a href="tel:+74951988986" class="text-white/70 hover:text-white transition-colors text-sm">
                             +7 (495) 198-89-86
                         </a>
                     </li>
@@ -119,7 +119,7 @@
         <!-- Bottom Bar -->
         <div class="border-t border-white/10 mt-12 md:mt-8 pt-8 md:pt-6 flex justify-between items-center gap-4 md:flex-col md:items-start">
             <div class="text-sm text-white/50">
-                © {{ now()->year }} ООО "СВ ТИМ". Все права защищены.
+                © {{ now()->year }} . Все права защищены.
             </div>
 
             <div class="flex gap-6 md:gap-4 sm:flex-col sm:gap-2 text-sm">
