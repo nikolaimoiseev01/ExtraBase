@@ -87,7 +87,7 @@
                 </div>
 
                 <h1 class="mb-6 text-5xl font-bold leading-tight lg:text-4xl md:text-3xl">
-                    ООО «СВ ТИМ»
+                    СВ ТИМ
                 </h1>
 
                 <p class="max-w-2xl text-xl leading-relaxed text-white/85 lg:text-lg md:text-base">
