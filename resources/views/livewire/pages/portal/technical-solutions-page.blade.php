@@ -51,34 +51,20 @@
                 class="absolute bottom-0 left-0 h-64 w-64 -translate-x-1/2 translate-y-1/2 rounded-full bg-white"></div>
         </div>
 
-        <div class="container relative mx-auto px-4 lg:px-8 md:px-4">
+        <div class="container relative mx-auto px-4 lg:px-8 md:px-4 container-page">
             <div class="max-w-3xl">
                 <div class="mb-6 inline-flex items-center rounded-full bg-white/10 px-4 py-1.5">
                     <span class="text-sm font-medium text-white/90">Портфолио</span>
                 </div>
 
                 <h1 class="mb-6 text-5xl font-bold leading-tight lg:text-4xl md:text-3xl">
-                    Наши работы
+                    Альбом технических решений
                 </h1>
 
                 <p class="max-w-2xl text-xl leading-relaxed text-white/85 lg:text-lg md:text-base">
                     Реализованные объекты по гидроизоляции фундаментов, подземных паркингов
                     и исторических зданий в Москве и Санкт-Петербурге
                 </p>
-            </div>
-
-            <div
-                class="mt-14 grid grid-cols-4 gap-6 border-t border-white/20 pt-14 lg:grid-cols-2 md:mt-10 md:pt-10 sm:grid-cols-1">
-                @foreach($stats as $stat)
-                    <div>
-                        <div class="mb-1 text-3xl font-black md:text-2xl">
-                            {{ $stat['value'] }}
-                        </div>
-                        <div class="text-sm text-white/65">
-                            {{ $stat['label'] }}
-                        </div>
-                    </div>
-                @endforeach
             </div>
         </div>
     </section>

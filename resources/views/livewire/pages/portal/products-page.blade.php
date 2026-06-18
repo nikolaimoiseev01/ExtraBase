@@ -491,7 +491,7 @@ $products = [
             <div class="absolute bottom-0 left-0 h-64 w-64 -translate-x-1/2 translate-y-1/2 rounded-full bg-white"></div>
         </div>
 
-        <div class="container relative mx-auto px-4 lg:px-8 md:px-4">
+        <div class="container relative mx-auto px-4 lg:px-8 md:px-4 container-page">
             <div class="max-w-3xl">
                 <div class="mb-6 inline-flex items-center rounded-full bg-white/10 px-4 py-1.5">
                     <span class="text-sm font-medium text-white/90">Каталог материалов</span>
@@ -521,7 +521,7 @@ $products = [
 
     {{-- Catalog --}}
     <section class="bg-[#F5F8FE] py-20 lg:py-16 md:py-12">
-        <div class="container mx-auto px-4 lg:px-8 md:px-4">
+        <div class="container mx-auto px-4 lg:px-8 md:px-4 container-page">
 
             {{-- Category tabs --}}
             <div class="mb-10 flex flex-wrap justify-center gap-2 md:justify-start">

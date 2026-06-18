@@ -1,5 +1,5 @@
 <footer class="bg-gradient-to-br from-[#2E4A92] to-[#3956BC] text-white">
-    <div class="container mx-auto px-8 lg:px-4 py-16 md:py-12 sm:py-10">
+    <div class="container mx-auto px-8 lg:px-4 py-16 md:py-12 sm:py-10 container-page">
         <div class="grid grid-cols-4 lg:grid-cols-2 md:!grid-cols-1 gap-12 lg:gap-8 md:gap-6">
             <!-- Company Info -->
             <div>

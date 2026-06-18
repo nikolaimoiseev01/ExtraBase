@@ -121,7 +121,7 @@
 
         <!-- Hero Section -->
     <section class="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-[#2E4A92] via-[#3956BC] to-[#4B6CD6] overflow-hidden">
-        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2070')] bg-cover bg-center opacity-15"></div>
+        <div class="absolute inset-0 bg-[url('/fixed/welcome-bg.jpg')] bg-cover bg-center opacity-15"></div>
 
         <div class="container mx-auto px-8 xl:px-6 lg:px-4 relative z-10 md:py-12">
             <div class="grid grid-cols-2 lg:!grid-cols-1 gap-12 lg:gap-8 items-center container-page">
@@ -167,7 +167,7 @@
     </section>
 
     {{-- BENEFITS --}}
-    <section class="border-b border-[#E8EFFD] bg-white py-16 lg:py-14 md:py-12">
+    <section class="border-b border-[#E8EFFD] bg-white py-16 lg:py-14 md:py-12 container-page">
         <div class="container mx-auto px-4 lg:px-8 md:px-4">
             <div class="grid grid-cols-4 gap-8 lg:grid-cols-2 md:grid-cols-1">
                 @foreach($benefits as $benefit)
@@ -326,7 +326,7 @@
 
     {{-- PROJECTS --}}
     <section class="bg-[#F5F8FE] py-20 lg:py-16 md:py-12">
-        <div class="container mx-auto px-4 lg:px-8 md:px-4">
+        <div class="container mx-auto px-4 lg:px-8 md:px-4  container-page">
             <div class="mb-10 flex flex-wrap items-end justify-between gap-4">
                 <div>
                     <p class="mb-3 text-sm font-semibold uppercase tracking-wide text-[#3956BC]">
