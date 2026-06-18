@@ -6,7 +6,7 @@
             <div class="absolute bottom-0 left-0 h-64 w-64 -translate-x-1/2 translate-y-1/2 rounded-full bg-white"></div>
         </div>
 
-        <div class="container relative mx-auto px-4 lg:px-8">
+        <div class="container relative mx-auto px-4 lg:px-8 container-page">
             <div class="max-w-3xl">
                 <div class="mb-6 inline-flex items-center rounded-full bg-white/10 px-4 py-1.5">
                     <span class="text-sm font-medium text-white/90">Комплексные решения</span>
@@ -26,7 +26,7 @@
 
     {{-- Services --}}
     <section class="bg-[#F5F8FE] py-20 md:py-14">
-        <div class="container mx-auto px-4 lg:px-8">
+        <div class="container mx-auto px-4 lg:px-8 container-page">
             <div class="mb-14 text-center md:mb-10">
                 <h2 class="mb-4 text-4xl font-bold text-[#1A2B5E] lg:text-3xl md:text-2xl">
                     Что мы делаем
@@ -255,7 +255,7 @@
 
     {{-- Advantages --}}
     <section class="bg-gradient-to-r from-[#3956BC] to-[#2E4A92] py-16 text-white md:py-12">
-        <div class="container mx-auto px-4 lg:px-8">
+        <div class="container mx-auto px-4 lg:px-8 container-page">
             @php
                 $advantages = [
                     ['value' => '15+', 'label' => 'Лет опыта'],
