@@ -339,7 +339,7 @@
                 </div>
 
                 <a
-                    href="/our-works"
+                    href="{{route('portal.works')}}"
                     class="inline-flex items-center gap-2 text-sm font-semibold text-[#3956BC] transition-colors hover:text-[#2E4A92]"
                 >
                     <span>Смотреть больше проектов</span>
@@ -350,7 +350,7 @@
             <div class="grid grid-cols-3 gap-6 lg:grid-cols-2 md:grid-cols-1">
                 @foreach($projects as $project)
                     <a
-                        href="/our-works"
+                        href="{{route('portal.works')}}"
                         class="group overflow-hidden rounded-2xl border border-[#E8EFFD] bg-white shadow-sm transition-all duration-300 hover:shadow-lg"
                     >
                         <div class="h-52 overflow-hidden">
